@@ -5,6 +5,7 @@ import HomeGC from '../screens/HomeGC';
 import HomeSupervisor from '../screens/HomeSupervisor';
 import HomeLaborer from '../screens/HomeLaborer';
 import EmployeeManagerScreen from '../screens/EmployeeManagerScreen';
+import ClockInOutScreen from '../screens/ClockInOutScreen';
 import { RootStackParamList } from './navigationTypes';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -17,6 +18,7 @@ const AppNavigator: React.FC = () => {
       <Stack.Screen name="HomeSupervisor" component={HomeSupervisor} />
       <Stack.Screen name="HomeLaborer" component={HomeLaborer} />
       <Stack.Screen name="EmployeeManager" component={EmployeeManagerScreen} />
+      <Stack.Screen name="ClockInOut" component={ClockInOutScreen} />
     </Stack.Navigator>
   );
 };
